@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A44B18207134E41AACFF3D1A /* Pods_WhereAmI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B10FC2A53188598A37E7106 /* Pods_WhereAmI.framework */; };
 		F9078504217543B50089D4EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9078503217543B50089D4EB /* AppDelegate.swift */; };
 		F9078506217543B50089D4EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9078505217543B50089D4EB /* ViewController.swift */; };
 		F9078509217543B50089D4EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9078507217543B50089D4EB /* Main.storyboard */; };
 		F907850B217543B80089D4EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F907850A217543B80089D4EB /* Assets.xcassets */; };
 		F907850E217543B80089D4EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F907850C217543B80089D4EB /* LaunchScreen.storyboard */; };
+		F90785172175477D0089D4EB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F90785162175477D0089D4EB /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F9078500217543B50089D4EB /* WhereAmI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereAmI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B10FC2A53188598A37E7106 /* Pods_WhereAmI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhereAmI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC4923FA55D0FAADC3EFC2BB /* Pods-WhereAmI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereAmI.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhereAmI/Pods-WhereAmI.release.xcconfig"; sourceTree = "<group>"; };
+		C2A7D01536472F0FB55D6EB5 /* Pods-WhereAmI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereAmI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhereAmI/Pods-WhereAmI.debug.xcconfig"; sourceTree = "<group>"; };
+		F9078500217543B50089D4EB /* WhereAmIGoogleMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereAmIGoogleMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9078503217543B50089D4EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9078505217543B50089D4EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9078508217543B50089D4EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F907850A217543B80089D4EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F907850D217543B80089D4EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F907850F217543B80089D4EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F90785162175477D0089D4EB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,29 +35,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F90785172175477D0089D4EB /* MapKit.framework in Frameworks */,
+				A44B18207134E41AACFF3D1A /* Pods_WhereAmI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D25AFC189E3B56CB351CE7FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2A7D01536472F0FB55D6EB5 /* Pods-WhereAmI.debug.xcconfig */,
+				BC4923FA55D0FAADC3EFC2BB /* Pods-WhereAmI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F90784F7217543B50089D4EB = {
 			isa = PBXGroup;
 			children = (
-				F9078502217543B50089D4EB /* WhereAmI */,
+				F9078502217543B50089D4EB /* WhereAmIGoogleMaps */,
 				F9078501217543B50089D4EB /* Products */,
+				F90785152175477D0089D4EB /* Frameworks */,
+				D25AFC189E3B56CB351CE7FB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		F9078501217543B50089D4EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F9078500217543B50089D4EB /* WhereAmI.app */,
+				F9078500217543B50089D4EB /* WhereAmIGoogleMaps.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F9078502217543B50089D4EB /* WhereAmI */ = {
+		F9078502217543B50089D4EB /* WhereAmIGoogleMaps */ = {
 			isa = PBXGroup;
 			children = (
 				F9078503217543B50089D4EB /* AppDelegate.swift */,
@@ -61,27 +80,38 @@
 				F907850C217543B80089D4EB /* LaunchScreen.storyboard */,
 				F907850F217543B80089D4EB /* Info.plist */,
 			);
-			path = WhereAmI;
+			path = WhereAmIGoogleMaps;
+			sourceTree = "<group>";
+		};
+		F90785152175477D0089D4EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F90785162175477D0089D4EB /* MapKit.framework */,
+				9B10FC2A53188598A37E7106 /* Pods_WhereAmI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F90784FF217543B50089D4EB /* WhereAmI */ = {
+		F90784FF217543B50089D4EB /* WhereAmIGoogleMaps */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F9078512217543B80089D4EB /* Build configuration list for PBXNativeTarget "WhereAmI" */;
+			buildConfigurationList = F9078512217543B80089D4EB /* Build configuration list for PBXNativeTarget "WhereAmIGoogleMaps" */;
 			buildPhases = (
+				EA2679FFC09DD1E58EFF2B85 /* [CP] Check Pods Manifest.lock */,
 				F90784FC217543B50089D4EB /* Sources */,
 				F90784FD217543B50089D4EB /* Frameworks */,
 				F90784FE217543B50089D4EB /* Resources */,
+				EA652BB1E1A96ADF56B48347 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = WhereAmI;
+			name = WhereAmIGoogleMaps;
 			productName = WhereAmI;
-			productReference = F9078500217543B50089D4EB /* WhereAmI.app */;
+			productReference = F9078500217543B50089D4EB /* WhereAmIGoogleMaps.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +129,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F90784FB217543B50089D4EB /* Build configuration list for PBXProject "WhereAmI" */;
+			buildConfigurationList = F90784FB217543B50089D4EB /* Build configuration list for PBXProject "WhereAmIGoogleMaps" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +142,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F90784FF217543B50089D4EB /* WhereAmI */,
+				F90784FF217543B50089D4EB /* WhereAmIGoogleMaps */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +159,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EA2679FFC09DD1E58EFF2B85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhereAmI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA652BB1E1A96ADF56B48347 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WhereAmI/Pods-WhereAmI-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhereAmI/Pods-WhereAmI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F90784FC217543B50089D4EB /* Sources */ = {
@@ -280,6 +359,7 @@
 		};
 		F9078513217543B80089D4EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2A7D01536472F0FB55D6EB5 /* Pods-WhereAmI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,7 +369,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vreddy.WhereAmI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vreddy.WhereAmIGoogleMaps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,6 +378,7 @@
 		};
 		F9078514217543B80089D4EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC4923FA55D0FAADC3EFC2BB /* Pods-WhereAmI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,7 +388,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vreddy.WhereAmI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vreddy.WhereAmIGoogleMaps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,7 +398,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F90784FB217543B50089D4EB /* Build configuration list for PBXProject "WhereAmI" */ = {
+		F90784FB217543B50089D4EB /* Build configuration list for PBXProject "WhereAmIGoogleMaps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F9078510217543B80089D4EB /* Debug */,
@@ -326,7 +407,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F9078512217543B80089D4EB /* Build configuration list for PBXNativeTarget "WhereAmI" */ = {
+		F9078512217543B80089D4EB /* Build configuration list for PBXNativeTarget "WhereAmIGoogleMaps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F9078513217543B80089D4EB /* Debug */,
